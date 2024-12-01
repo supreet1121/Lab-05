@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="org.example.comp288lab05.HelloController">
+    <padding>
+        <Insets bottom="10" left="90" right="90" top="10" />
+    </padding>
+
+    <Label text="Player Management" />
+    <TextField fx:id="playerIdField" promptText="Player ID" />
+    <TextField fx:id="firstNameField" prefHeight="17.0" prefWidth="20.0" promptText="First Name" />
+    <TextField fx:id="lastNameField" promptText="Last Name" />
+    <TextField fx:id="emailField" promptText="Email" />
+    <TextField fx:id="phoneField" promptText="Phone" />
+    <TextField fx:id="addressField" promptText="Address" />
+    <TextField fx:id="postalCodeField" promptText="Postal Code" />
+    <TextField fx:id="provinceField" promptText="Province" />
+
+    <!-- TextField for playerId when updating player -->
+
+    <Button onAction="#updatePlayer" text="Update Player" />
+
+    <Button onAction="#addPlayer" text="Add Player" />
+
+    <Separator />
+
+    <Label text="Game Management" />
+    <TextField fx:id="gameTitleField" promptText="Game Title" />
+    <TextField fx:id="gameGenreField" promptText="Game Genre" />
+    <Button onAction="#addGame" text="Add Game" />
+
+    <Separator />
+
+    <Button onAction="#viewPlayers" text="View Players" />
+    <ListView fx:id="playersListView" />
+</VBox>
